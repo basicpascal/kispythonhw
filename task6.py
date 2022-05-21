@@ -48,11 +48,16 @@ def main(items):
             items,
             two(
                 items,
+                four(items, 0, 1, 2),
                 3,
-                4,
-                four(items, 0, 1, 2)
+                4
             ),
-            four(items, 8, zero(items, 9, 10), two(items, 5, 6, 7)),
+            four(
+                items,
+                two(items, 5, 6, 7),
+                8,
+                zero(items, 9, 10)
+            ),
             11
         ),
         12,
@@ -60,4 +65,4 @@ def main(items):
     )
 
 
-print(main([1986, 'VHDL', 2013, 1993, 1998]))
+print(main([1986, 'VCL', 2013, 1984, 2012]))
